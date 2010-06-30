@@ -1,4 +1,8 @@
+<h2><%= link_to 'Collections', fabric_collections_path %> > <%= @fabric_collection.name %></h2>
+
 <p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_fabric_collection_path(@fabric_collection) %>
 
 <p>
   <b>Name:</b>
@@ -19,7 +23,3 @@
   <b>Description:</b>
   <%= @fabric_collection.description %>
 </p>
-
-
-<%= link_to 'Edit', edit_fabric_collection_path(@fabric_collection) %> |
-<%= link_to 'Back', fabric_collections_path %>

@@ -1,6 +1,5 @@
-<h1>Editing fabric_collection</h1>
+<h2><%= link_to 'Collections', fabric_collections_path %> > <%= @fabric_collection.name %></h2>
+
+<%= link_to 'Cancel', @fabric_collection %>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @fabric_collection %> |
-<%= link_to 'Back', fabric_collections_path %>

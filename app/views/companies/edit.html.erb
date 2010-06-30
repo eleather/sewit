@@ -1,6 +1,5 @@
-<h1>Editing company</h1>
+<h2><%= link_to 'Companies', companies_path %> > <%= @company.name %></h2>
+
+<%= link_to 'Cancel', @company %>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @company %> |
-<%= link_to 'Back', companies_path %>

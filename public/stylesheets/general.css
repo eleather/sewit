@@ -5,3 +5,10 @@ div.clearfix {
 div#page-header {
   background: #FFFF99;
 }
+
+div.relation-list {
+  border: 1px solid black;
+  width: auto;
+  margin: 5px;
+  padding: 5px;
+}

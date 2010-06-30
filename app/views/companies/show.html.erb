@@ -1,4 +1,8 @@
+<h2><%= link_to 'Companies', companies_path %> > <%= @company.name %></h2>
+
 <p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_company_path(@company) %>
 
 <p>
   <b>Name:</b>
@@ -10,6 +14,29 @@
   <%= @company.website %>
 </p>
 
+<div id="fabric-collection-list" class="relation-list">
+  <h3>Fabric Collections</h3>
+  <ul>
+  <% @company.fabric_collections.each do |fabric_collection| %>
+    <li><%= link_to fabric_collection.name, fabric_collection %></li>
+  <% end %>
+  </ul>
+</div>
 
-<%= link_to 'Edit', edit_company_path(@company) %> |
-<%= link_to 'Back', companies_path %>
+<div id="fabric-list" class="relation-list">
+  <h3>Fabrics</h3>
+  <ul>
+  <% @company.fabric_collections.each do |fabric_collection| %>
+    <li><%= link_to fabric_collection.name, fabric_collection %></li>
+  <% end %>
+  </ul>
+</div>
+
+<div id="spool-list" class="relation-list">
+  <h3>Spools</h3>
+  <ul>
+  <% @company.fabric_collections.each do |fabric_collection| %>
+    <li><%= link_to fabric_collection.name, fabric_collection %></li>
+  <% end %>
+  </ul>
+</div>
