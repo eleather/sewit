@@ -1,0 +1,27 @@
+<h1>Listing fabric_collections</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Company</th>
+    <th>Website</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fabric_collections.each do |fabric_collection| %>
+  <tr>
+    <td><%= fabric_collection.name %></td>
+    <td><%= link_to fabric_collection.company.name, :controller => "companies", :action => "show", :id => fabric_collection.company_id %></td>
+    <td><%= link_to 'Link', fabric_collection.website %></td>
+    <td><%= link_to 'Show', fabric_collection %></td>
+    <td><%= link_to 'Edit', edit_fabric_collection_path(fabric_collection) %></td>
+    <td><%= link_to 'Destroy', fabric_collection, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fabric collection', new_fabric_collection_path %>

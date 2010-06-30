@@ -1,4 +1,6 @@
 Sewit::Application.routes.draw do |map|
+  resources :fabric_collections
+
   resources :companies
 
   # The priority is based upon order of creation:

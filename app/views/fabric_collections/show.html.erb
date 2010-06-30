@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @fabric_collection.name %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= link_to @fabric_collection.company.name, :controller => "companies", :action => "show", :id => @fabric_collection.company_id%>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= link_to @fabric_collection.website, @fabric_collection.website %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @fabric_collection.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_fabric_collection_path(@fabric_collection) %> |
+<%= link_to 'Back', fabric_collections_path %>

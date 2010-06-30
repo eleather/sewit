@@ -9,11 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100630053447) do
+ActiveRecord::Schema.define(:version => 20100630065328) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
     t.string   "website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "fabric_collections", :force => true do |t|
+    t.string   "name"
+    t.integer  "company_id"
+    t.string   "website"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
