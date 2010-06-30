@@ -44,7 +44,9 @@ gem 'cucumber', '0.7.3'
 gem 'spork'
 gem 'launchy'
 
-# Use factory girl for fixtures
+# Use factory_girl for fixtures
 gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git', :branch => 'rails3'
 
+# Use tabs_on_rails for tabnav
+gem 'tabs_on_rails', :git => 'http://github.com/atomgas/tabs_on_rails.git'
 

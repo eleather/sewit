@@ -1,0 +1,13 @@
+ul.primary-tabnav {
+  background: #4B0082;
+  color: #8B00CC;
+  list-style-type: none;
+}
+
+ul.primary-tabnav li {
+  float: left;
+  border: 1px solid #8B00CC;
+  border-bottom: none;
+  margin: 1px;
+  padding: 5px;
+}

@@ -1,0 +1,7 @@
+div.clearfix {
+  clear: both;
+}
+
+div#page-header {
+  background: #FFFF99;
+}

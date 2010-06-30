@@ -7,6 +7,21 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  
+  <div id="page-header">
+  
+    <div>
+      <h2><%= link_to "SewIt!", :controller => "companies" %></h2> <p>Keep track of your stuff.</p>
+    </div>
+  
+    <% tabs_tag :open_tabs => { :id => "main-tabs", :class => "primary-tabnav" } do |tab| %>
+      <%= tab.companies   'Companies',    "/companies" %>
+      <%= tab.collections 'Collections',  "/fabric_collections" %>
+    <% end %>
+    
+    <div class="clearfix" />
+  
+  </div>
 
 <%= yield %>
 
