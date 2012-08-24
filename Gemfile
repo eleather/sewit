@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta4'
+gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -39,13 +39,13 @@ gem "rspec-mocks",        ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rs
 # Use cucumber for feature testing
 gem 'capybara'
 gem 'database_cleaner'
-gem 'cucumber-rails'
-gem 'cucumber', '0.7.3'
+gem 'cucumber-rails', '0.3.2'
+gem 'cucumber', '0.10.2'
 gem 'spork'
 gem 'launchy'
 
 # Use factory_girl for fixtures
-gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git', :branch => 'rails3'
+gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git'
 
 # Use tabs_on_rails for tabnav
 gem 'tabs_on_rails', :git => 'http://github.com/atomgas/tabs_on_rails.git'
